@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>The Lion Club Nawanshahr,Punjab</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link href="themes/1/js-image-slider.css" rel="stylesheet" type="text/css" />
+    <script src="themes/1/js-image-slider.js" type="text/javascript"></script>
+    <link href="generic.css" rel="stylesheet" type="text/css" />
+	<script>
+		var myIndex = 0;
+		carousel();
+
+			function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";
+		}
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}
+			x[myIndex-1].style.display = "block";
+			setTimeout(carousel, 2000); // Change image every 2 seconds
+		}
+	</script>
+
+	<style>
+		.mySlides 
+		{display:none;}
+	</style>
+</head>
+<body>
+	<div id="header">
+		<div>
+			<div id="navigation">
+				<div>
+					<a href="index.html">Login</a> 
+				</div>
+				<ul id="primary">
+					<li class="selected">
+						<a href="home.html"><span>Home</span></a>
+					</li>
+					<li>
+						<a href="events.html"><span>Events</span></a>
+					</li>
+					<li>
+						<a href="media.html"><span>Media</span></a>
+					</li>
+				</ul>
+				<ul id="secondary">
+					<li>
+						<a href="Blog.html"><span>Blog</span></a>
+					</li>
+					<li>
+						<a href="about.html"><span>About Us</span></a>
+					</li>
+					<li>
+						<a href="contact.html"><span>ContactUs</span></a>
+					</li>
+				</ul>
+			</div>
+			<a href="home.html" id="logo"><img src="images/logo.png" alt="LOGO"></a>
+		</div>
+	</div>
+	<div id="adbox">
+		<h1><marquee direction="left"  width="870px"><img src="images/headlines-logo.png" alt="logo">Where there's a need there's a lion<img src="images/headlines-logo.png" alt="logo"></marquee></h1>
+		<div id="sliderFrame">
+        <div id="slider">
+            <a href="" target="_blank">
+            <img src="images/headlines-1.jpg" alt="" />
+            </a>
+            <img src="images/headlines-2.jpg" />
+            <img src="images/headlines-3.jpg" />
+            <img src="images/headlines-4.png" />
+        </div>
+        
+    </div>
+	</div>		
+	</div>
+	<div id="body">
+		<div id="contents">
+			<ul id="articles">
+				<li>
+					<h1>Who we are</h1>
+					<p>
+					Whenever a Lions club gets together, problems get smaller.
+					And communities get better. That's because we help where
+					help is needed – in our own communities and around the world 
+					– with unmatched integrity and energy.....
+					</p>
+					<a href="" class="more">Read More</a>
+				</li>
+				<li>
+					<h1>How we Serve</h1>
+					<p>
+					When it comes to meeting challenges, our response is simple: We serve.....	
+					</p>
+					<a href="" class="more">Read More</a>
+				</li>
+				<li>
+					<h1>Be a Lion</h1>
+					<p>
+					You’ll join a local group of service-minded men and women who volunteer 
+					to support your community every day. You’ll also become a member of Lions 
+					Clubs International – a respected international organization, a leader 
+					in your local community, and a friend to people in need.....
+					</p>
+					<a href="" class="more">Read More</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="background">
+			<div class="body">
+				<div class="subscribe">
+					<h3>Get Monthly Newsletter</h3>
+					<form action="index.html" method="post">
+						<input type="text" value="" class="txtfield">
+						<input type="submit" value="" class="button">
+					</form>
+				</div>
+				<div class="posts">
+					<h3>Latest Post</h3>
+					<p>
+						'Support Lions’ Work to Save Sight. <br> LCIF admin <a href="#header">...</a> <span>05/11/2016</span>
+					</p>
+				</div>
+				<div class="connect">
+					<h3>Follow Us:</h3>
+					<a href="https://www.facebook.com/lionsclubs/?hc_ref=PAGES_TIMELINE&fref=nf" target="_blank" class="facebook"></a> <a href="https://twitter.com/lionsclubs?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank" class="twitter"></a> <a href="https://plus.google.com/+lionsclubs" target="_blank" class="googleplus"></a>
+				</div>
+			</div>
+		</div>
+		<span id="footnote"> <a href="index.html">The Lion Club Nawanshahr,Punjab</a> &copy; 2016 | All Rights Reserved(Dahiya Saab).</span>
+	</div>
+</body>
+</html>
